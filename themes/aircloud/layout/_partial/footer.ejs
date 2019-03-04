@@ -1,0 +1,48 @@
+
+<footer class="footer" style ="
+bottom: 0;">
+    <ul class="list-inline text-center">
+
+        <% if (config.facebook_username) { %>
+        <li>
+            
+            <a class="fb-ic" href="https://www.facebook.com/<%= config.facebook_username %>">
+                <i class="fab fa-facebook-f" style ="color:aliceblue"></i>
+              </a>
+        </li>
+        <% } %>
+
+        <% if (config.github_username) { %>
+        <li>
+
+            <a class="li-ic"  href="https://github.com/<%= config.github_username %>">
+                <i class="fab fa-github-alt" style ="color:aliceblue"> </i>
+              </a>
+
+            
+        </li>
+        <% } %>
+
+        <% if (config.linkedin_username) { %>
+        <li>
+            
+            <a class="li-ic"  href="https://www.linkedin.com/in/<%= config.linkedin_username %>">
+                <i class="fab fa-linkedin-in" style ="color:aliceblue"> </i>
+              </a>
+        </li>
+        <% } %>
+
+    </ul>
+    <% if(config.friends) { %>
+    <p>
+        <span>/</span>
+        <% config.friends.forEach(function(friend){ %>
+        <span><a href="<%= friend.href %>"><%= friend.title %></a></span>
+        <span>/</span>
+        <% }); %>
+    </p>
+    <% }%>
+    <p>
+</footer>
+
+

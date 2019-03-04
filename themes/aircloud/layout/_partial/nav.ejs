@@ -1,0 +1,42 @@
+      <nav class="navbar bg-primary navbar-dark navbar-expand-sm border-bottom box-shadow fixed-top">
+            <a class="navbar-brand" href="#">Blog</a>        
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        
+              <ul class="navbar-nav ml-auto ">
+                    <li class="nav-link"><a class="nav-link" href="<%= url_for(config.home_dir || '/') %>"><%= __('nav.home') %></a></li>
+                    <li class="nav-link"><a class="nav-link" href="<%= url_for(config.tag_dir) %>"><%= __('nav.tags') %></a></li>
+                    <li class="nav-link"><a class="nav-link" href="<%= url_for(config.archive_dir) %>"><%= __('nav.archives') %></a></li>
+                    <li class="nav-link"><a class="nav-link" href="<%= config.root %><%- 'about/' %>"><%= __('nav.about') %></a></li>
+                    <li class="nav-link"><a class="nav-link" id="search"><i class="iconfont icon-sousuo1"></i><span><%= __('nav.search') %></span></a>
+                </ul>
+            </div>
+          </nav>
+
+
+<div class="nav" id="nav">
+    <%
+        if(is_post()){
+        // if(/[0-9]*\/[0-9]*\/[0-9]*\//.test(path)){
+    %>
+        <%- partial('./toc', {item: page, index: false}) %>
+    <% } %>
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search"><%= __('search.search') %></span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>

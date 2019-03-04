@@ -11,8 +11,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://niexiaotao.cn/
-root: /
+url: https://stivendiaz.github.io/hexoBlog
+root: /hexoBlog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -27,7 +27,7 @@ keyword: "腾讯"
 
 # SNS settings
 github_username:    stivendiaz
-facebook_username:  xiaotao.nie.5
+facebook_username:  st1vend1az
 linkedin_username:  stivendiaz
 
 # Build settings
@@ -118,5 +118,5 @@ theme: aircloud
 deploy:
   type: git
   repo: https://github.com/stivendiaz/hexoBlog
-  branch: master
+  branch: published
 

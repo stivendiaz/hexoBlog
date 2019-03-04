@@ -1,22 +1,18 @@
-## Hexo-Aircloud-Blog: A DEMO For [Hexo-Theme-AirCloud](https://github.com/aircloud/hexo-theme-aircloud)
+## Usage
 
-> [English Document](./README-EN.md) | [预览地址](http://niexiaotao.cn/)
-
-## 使用方式
-
-需要提前全局安装 hexo
+Need to install hexo globally before
 
 ```
-git clone https://github.com/aircloud/hexo-aircloud-blog.git --recursive
-cd hexo-aircloud-blog
+git clone https://github.com/aircloud/hexo-theme-aircloud.git
+cd hexo-theme-aircloud
 npm install
 hexo serve
 ```
 
-然后打开 http://localhost:4000/ 即可。
+Then visit http://localhost:4000/
 
-## 配置
+## Configuration
 
-可以直接修改 _config.yml 进行自定义配置。如果在配置过程中存在疑问，可以在[这里](https://github.com/aircloud/hexo-aircloud-blog/issues)进行提出
+Directly update _config.yml. If you have some problems, please create an issue [there](https://github.com/aircloud/hexo-aircloud-blog/issues)
 
-> 本主题持续更新中
+> Continuous updating
